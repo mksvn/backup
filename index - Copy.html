@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta property="og:image" content="http://mksvn.com/img/mksvn-og.jpg" />
+
+		<title>Michelle Meksavanh &#10141; UX/UI Designer</title>
+
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+		<!-- animsition.css -->
+		<link rel="stylesheet" href="../css/animsition.css">
+	</head>
+	<body class="d-flex flex-column h-100">
+	<div class="animsition-overlay" data-animsition-overlay="true">
+
+		<div class="container mt-5">
+
+			<div class="row text-center mb-5">
+				<div class="col-12">
+					<h4>Michelle Meksavanh</h4>
+					UX/UI Designer<br>
+					<a href="https://dribbble.com/michellemeksavanh" target="_blank" class="no-transition"><img src="../img/dribbble.svg" alt="Dribbble" class="footer-icons"></a>
+					<a href="mailto:m.mksvn@gmail.com" class="no-transition"><img src="../img/email.svg"></a> 
+				</div>
+			</div>
+
+			<div class="row justify-content-center mt-5 mb-5">
+                <div class="col-12 col-lg-4">
+                    <a href="/projects/kiosk.html">
+                        <div class="proj-card">
+                            <div><img src="img/th-pos.png"></div>
+                            <div class="proj-title">Buffet order system UI</div>
+                        </div>
+                    </a>
+                </div>	
+                <div class="col-12 col-lg-4">
+                    <a href="/projects/hday.html">
+                        <div class="proj-card">
+                            <div><img src="img/th-hday.png"></div>
+                            <div class="proj-title">Full service for communications app</div>
+                        </div>
+                    </a>
+                </div>	
+                <div class="col-12 col-lg-4">
+                    <a href="/projects/designsystem.html">
+                        <div class="proj-card">
+                            <div><img src="img/th-designsystem.png"></div>
+                            <div class="proj-title">Integrating a design system</div>
+                        </div>
+                    </a>
+                </div>	
+                <div class="col-12 col-lg-4">
+                    <a href="/projects/menu.html">
+                        <div class="proj-card">
+                            <div><img src="img/th-csvmenu.png"></div>
+                            <div class="proj-title">Mobile menu generator</div>
+                        </div>
+                    </a>
+                </div>	
+				<div class="col-12 col-lg-4">
+                    <a href="/projects/mkr.html">
+                        <div class="proj-card">
+                            <div><img src="img/th-mkr.png"></div>
+                            <div class="proj-title">Commercial real estate website design</div>
+                        </div>
+                    </a>
+				</div>	
+            </div>
+
+		</div>
+
+		<footer class="container-fluid mt-0">
+			<div class="row">
+				<div class="col">
+					<div class="container">
+						<div class="row justify-content-between">
+							<div class="col-12 text-center col-12" id="copyright">
+								&copy; Michelle Meksavanh 2024
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</footer>
+
+	</div> <!-- /.animsition-overlay -->
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+		<script src="../js/animsition.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+			  $("a").each(function(){
+			  	if ( !(this.classList.contains("no-transition")) ) {
+			  		$(this).addClass('animsition-link');
+			  	}
+			  });
+			  $(".animsition-overlay").animsition({
+			    inClass: 'overlay-slide-in-left',
+			    outClass: 'overlay-slide-out-left',
+			    inDuration: 1500,
+			    outDuration: 800,
+			    linkElement: '.animsition-link',
+			    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+			    loading: true,
+			    loadingParentElement: 'body', //animsition wrapper element
+			    loadingClass: 'animsition-loading',
+			    loadingInner: '', // e.g '<img src="loading.svg" />'
+			    timeout: false,
+			    timeoutCountdown: 5000,
+			    onLoadEvent: true,
+			    browser: [ 'animation-duration', '-webkit-animation-duration'],
+			    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+			    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+			    overlay : true,
+			    overlayClass : 'animsition-overlay-slide',
+			    overlayParentElement : 'body',
+			    transition: function(url){ window.location.href = url; }
+			  });
+			  	$(".accordion").on("click", function() {
+				$(this).toggleClass("accordion-active");
+				$(this).next().slideToggle(200);
+			  });
+			});
+		</script>
+	</body>
+</html>
