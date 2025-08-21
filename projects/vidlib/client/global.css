@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    background-image: url('data:image/svg+xml,<svg width="1920" height="1330" viewBox="0 0 1920 1330" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_3_69)"><rect width="1920" height="1330" transform="matrix(-1 0 0 -1 1920 1330)" fill="%230A1114"/><g filter="url(%23filter0_f_3_69)"><ellipse cx="1510.54" cy="551.633" rx="651.829" ry="344.937" transform="rotate(-163.525 1510.54 551.633)" fill="%234154AA"/></g><g filter="url(%23filter1_f_3_69)"><path d="M1036.37 394.479C1591.12 466.814 1735.5 743.834 1929.72 756.564C2173.88 772.567 2153.84 524.721 1965.59 411.514C1743.69 278.074 660.423 345.458 1036.37 394.479Z" fill="%234269A4"/></g><g filter="url(%23filter2_f_3_69)"><ellipse cx="102.749" cy="-178.726" rx="683" ry="623" transform="rotate(-174.066 102.749 -178.726)" fill="%23893536"/></g><g filter="url(%23filter3_f_3_69)"><path d="M1240.84 50.5975C1411.68 68.355 1501.43 -14.1434 1514.16 -136.648C1540.73 -392.271 42.1362 -639.91 -208.39 -450.472C-392.504 -311.252 -393.914 -88.4119 -225.147 8.30909C-34.4257 117.613 -45.946 135.869 157.749 86.3091C327.707 44.9576 522.609 -28.5776 707.821 -59.0964C881.178 -87.6618 1089.09 34.8243 1240.84 50.5975Z" fill="%23FF1D4E"/></g></g><defs><filter id="filter0_f_3_69" x="457.777" y="-247.361" width="2105.53" height="1597.99" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="210" result="effect1_foregroundBlur_3_69"/></filter><filter id="filter1_f_3_69" x="637.796" y="13.3354" width="1792.06" height="1063.97" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="160" result="effect1_foregroundBlur_3_69"/></filter><filter id="filter2_f_3_69" x="-879.684" y="-1102.46" width="1964.87" height="1847.46" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_3_69"/></filter><filter id="filter3_f_3_69" x="-669.187" y="-837.315" width="2503.7" height="1269.75" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="160" result="effect1_foregroundBlur_3_69"/></filter><clipPath id="clip0_3_69"><rect width="1920" height="1330" fill="white" transform="matrix(-1 0 0 -1 1920 1330)"/></clipPath></defs></svg>');
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+}
