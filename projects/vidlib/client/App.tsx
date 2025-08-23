@@ -17,7 +17,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/projects/vidlib">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/video/:lessonId/:videoId" element={<VideoDetail />} />
